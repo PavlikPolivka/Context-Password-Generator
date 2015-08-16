@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Context Password Generator",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "This is password generator acessible from context menu.",
+    "description": "The description of the application"
+  }
+}
