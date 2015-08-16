@@ -12,7 +12,7 @@ chrome.contextMenus.create({
   onclick: function(info, tab) {
     console.log(info);
     console.log(tab);
-    chrome.tabs.sendMessage(tab.id, 'changeEditable12345');
+    chrome.tabs.sendMessage(tab.id, 'aaaaa');
   }
 });
 
