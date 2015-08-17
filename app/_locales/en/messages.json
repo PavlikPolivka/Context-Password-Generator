@@ -6,5 +6,9 @@
   "appDescription": {
     "message": "This is password generator acessible from context menu.",
     "description": "The description of the application"
+  },
+  "contextMenu": {
+    "message": "Generate new password",
+    "description": "Text in context menu"
   }
 }

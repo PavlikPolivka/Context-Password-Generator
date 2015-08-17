@@ -9,8 +9,10 @@ function copyToClipboard(str) {
   document.execCommand('Copy', false, null);
 }
 
-chrome.runtime.onMessage.addListener(function(password) {
-  console.log('test');
-  document.activeElement.value = password;
-  copyToClipboard(password);
+chrome.runtime.onMessage.addListener(function(request) {
+  if(request.name && request.name === 'password') {
+    var password = request.password;
+    document.activeElement.value = password;
+    copyToClipboard(password);
+  }
 });

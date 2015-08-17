@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+  <script type="text/javascript">
+  var LIVERELOAD_HOST = 'localhost:';
+  var LIVERELOAD_PORT = 35729;
+  var connection = new WebSocket('ws://' + LIVERELOAD_HOST + LIVERELOAD_PORT + '/livereload');
+
+  connection.onerror = function (error) {
+    console.log('reload connection got error:', error);
+  };
+
+  connection.onmessage = function (e) {
+    if (e.data) {
+      var data = JSON.parse(e.data);
+      if (data && data.command === 'reload') {
+        location.reload();
+      }
+    }
+  };
+  </script>
+  <form>
+    <input type="text" id="text"/> <br>
+    <input type="password" id="pass1"/> <br>
+    <input type="password" id="pass2"/> <br>
+  </form>
+  <input type="password" id="notValid"/> <br>
+</body>
+</html>
