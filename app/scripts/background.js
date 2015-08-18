@@ -49,7 +49,6 @@ chrome.contextMenus.create({
       symbols: '!@#$%^&*()+_-=}{[]|:;"/?.><,`~'
     }, function(settings) {
       var password = passwordGenerator(settings);
-      console.log(password);
       chrome.tabs.sendMessage(tab.id,{
         name: 'password',
         password: password
