@@ -8,10 +8,10 @@ function copyToClipboard(str) {
 	document.execCommand('Copy', false, null);
 }
 
-function contains(a, obj) {
-	var i = a.length;
+function currentElementIndex(array, obj) {
+	var i = array.length;
 	while (i--) {
-		if (a[i] === obj) {
+		if (array[i] === obj) {
 			return i;
 		}
 	}
@@ -20,43 +20,49 @@ function contains(a, obj) {
 
 function nearestElement(el, selector) {
 	var nearest = null;
-	var elemenets;
-	var p,l,r,rr,c,d,e;
+	var elemenets,
+		node,
+		leftElement,
+		rightElement,
+		rightDistance,
+		canRight,
+		canLeft,
+		elementIndex;
 
 	if (!selector.indexOf('#')) {
 		nearest = document.querySelector(selector);
 	} else {
-		p = el.parentNode;
-		while (p) {
-			elemenets = p.querySelectorAll(selector);
-			d = contains(elemenets, el);
-			if(d === null && elemenets.length > 0) {
+		node = el.parentNode;
+		while (node) {
+			elemenets = node.querySelectorAll(selector);
+			elementIndex = currentElementIndex(elemenets, el);
+			if(elementIndex === null && elemenets.length > 0) {
 				nearest = elemenets[0];
 				break;
 			} else if(elemenets.length > 1) {
-				c = false;
-				e = false;
-				l = d-1;
-				r = d+1;
-				if(l < 0) {
-					e = true;
+				canRight = false;
+				canLeft = false;
+				leftElement = elementIndex-1;
+				rightElement = elementIndex+1;
+				if(leftElement < 0) {
+					canLeft = true;
 				}
-				if(r < elemenets.length) {
-					c = true;
-					rr = elemenets.length - r;
+				if(rightElement < elemenets.length) {
+					canRight = true;
+					rightDistance = elemenets.length - rightElement;
 				}
-				if(c && rr <= l) {
-					nearest = elemenets[r];
-				} else if(!e) {
-					nearest = elemenets[l];
-				} else if(c) {
-					nearest = elemenets[r];
+				if(canRight && rightDistance <= leftElement) {
+					nearest = elemenets[rightElement];
+				} else if(!canLeft) {
+					nearest = elemenets[leftElement];
+				} else if(canRight) {
+					nearest = elemenets[rightElement];
 				}
 			}
 			if (nearest !== null) {
 				break;
 			}
-			p = p.parentNode;
+			node = node.parentNode;
 		}
 		return nearest;
 	}
