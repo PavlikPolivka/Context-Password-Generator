@@ -1,20 +1,20 @@
 {
   "appName": {
-    "message": "Context Password Generator",
+    "message": "Kontextový Generátor Hesel",
     "description": "The name of the application"
   },
   "appDescription": {
-    "message": "This is password generator acessible from context menu.",
+    "message": "Toho je generátor hesel dostupný z kontextové nabídky.",
     "description": "The description of the application"
   },
   "contextMenu": {
-    "message": "Generate new password",
+    "message": "Vygeneruj nové heslo",
     "description": "Text in context menu"
   },
   "useUpperCase": {
-    "message": "Use upper case letters?"
+    "message": "Používat velká písmena?"
   },
   "useNumbers": {
-    "message": "Use numbers [0 - 9]?"
+    "message": "Používat čísla [0 - 9]?"
   }
 }

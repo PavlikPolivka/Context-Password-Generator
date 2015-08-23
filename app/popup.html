@@ -8,15 +8,24 @@
     <!-- endbuild -->
     <!-- build:css styles/main.css -->
     <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/pure-min.css" rel="stylesheet">
     <!-- endbuild -->
   </head>
   <body>
-    <h1>'Allo, 'Allo! From Pavel</h1>
-
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
+    <div class="pure-g widget-body">
+        <div class="pure-u-5-5">
+            <form class="pure-form pure-form-aligned">
+                <fieldset>
+                    <div class="pure-control-group">
+                        <input id="upperCase" type="checkbox"> <span data-message="useUpperCase"> Use upper case? </span>
+                    </div>
+                    <div class="pure-control-group">
+                        <input id="numbers" type="checkbox"> <span data-message="useNumbers"> Use numbers? </span>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
 
     <!-- build:js scripts/popup.js -->
     <script src="scripts/popup.js"></script>
