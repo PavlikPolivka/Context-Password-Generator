@@ -7,8 +7,8 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css styles/main.css -->
-    <link href="styles/main.css" rel="stylesheet">
     <link href="styles/pure-min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
     <!-- endbuild -->
   </head>
   <body>
@@ -17,13 +17,36 @@
             <form class="pure-form pure-form-aligned">
                 <fieldset>
                     <div class="pure-control-group">
+                        <label for="len" class="inline" data-message="length">Length:</label>
+                        <input id="len" type="number" class="pure-input-1-3 inline">
+                    </div>
+                    <div class="pure-control-group">
                         <input id="upperCase" type="checkbox"> <span data-message="useUpperCase"> Use upper case? </span>
                     </div>
                     <div class="pure-control-group">
                         <input id="numbers" type="checkbox"> <span data-message="useNumbers"> Use numbers? </span>
                     </div>
+                    <div class="pure-control-group">
+                        <input id="symbols" type="checkbox"> <span data-message="useSymbols"> Use symbols? </span>
+                    </div>
+                    <div id="specialInput" class="pure-control-group hide">
+                        <input class="pure-input-1" type="text" id="symbolsChars">
+                    </div>
                 </fieldset>
             </form>
+        </div>
+        <div id="spinner" class="hide">
+            <div class="blockG" id="rotateG_01"></div>
+            <div class="blockG" id="rotateG_02"></div>
+            <div class="blockG" id="rotateG_03"></div>
+            <div class="blockG" id="rotateG_04"></div>
+            <div class="blockG" id="rotateG_05"></div>
+            <div class="blockG" id="rotateG_06"></div>
+            <div class="blockG" id="rotateG_07"></div>
+            <div class="blockG" id="rotateG_08"></div>
+        </div>
+        <div id="message" data-message="saved" class="hide">
+            Saved    
         </div>
     </div>
 

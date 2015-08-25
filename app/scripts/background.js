@@ -18,13 +18,16 @@ function passwordGenerator(settings) {
   var length = settings.len;
   var useNumbers = settings.numbers;
   var useUppercase = settings.uppercase;
+  var useSymbols = settings.symbols;
   var lowercase = 'abcdefghijklmnopqrstuvwxyz';
   var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   var numbers = '0123456789';
-  var symbols = settings.symbols;
+  var symbols = settings.symbolsChars;
 
   var pool = lowercase;
-  pool += symbols;
+  if(useSymbols) {
+    pool += symbols;
+  }
   if(useUppercase) {
     pool += uppercase;
   }
@@ -46,7 +49,8 @@ chrome.contextMenus.create({
       len: 10,
       numbers: true,
       uppercase: true,
-      symbols: '!@#$%^&*()+_-=}{[]|:;"/?.><,`~'
+      symbols: false,
+      symbolsChars: '!@#$%^&*()+_-=}{[]|:;"/?.><,`~'
     }, function(settings) {
       var password = passwordGenerator(settings);
       chrome.tabs.sendMessage(tab.id,{
