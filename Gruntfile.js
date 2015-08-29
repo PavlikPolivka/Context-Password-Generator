@@ -55,9 +55,11 @@ module.exports = function (grunt) {
         },
         files: [
           '<%= config.app %>/*.html',
+          '<%= config.app %>/scripts/*.js',
           '<%= config.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
           '<%= config.app %>/manifest.json',
-          '<%= config.app %>/_locales/{,*/}*.json'
+          '<%= config.app %>/_locales/{,*/}*.json',
+          'example/index.html'
         ]
       }
     },
@@ -75,6 +77,15 @@ module.exports = function (grunt) {
           open: false,
           base: [
             '<%= config.app %>'
+          ]
+        }
+      },
+      example: {
+        options: {
+          port: 8666,
+          livereload: 35729,
+          base: [
+            'example'
           ]
         }
       },
@@ -300,6 +311,7 @@ module.exports = function (grunt) {
       'jshint',
       'concurrent:chrome',
       'connect:chrome',
+      'connect:example',
       'watch'
     ]);
   });

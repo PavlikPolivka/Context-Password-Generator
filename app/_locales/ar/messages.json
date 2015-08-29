@@ -1,0 +1,29 @@
+{
+  "appName": {
+    "message": "السياق مولد كلمة السر"
+  },
+  "appDescription": {
+    "message": "هذا هو مولد كلمة السر يمكن الوصول إليها من قائمة السياق."
+  },
+  "contextMenu": {
+    "message": "توليد كلمة سر جديدة"
+  },
+  "useUpperCase": {
+    "message": "استخدام الحروف الكبيرة؟"
+  },
+  "useNumbers": {
+    "message": "استخدام أرقام [0-9]؟"
+  },
+  "useSymbols": {
+    "message": "استخدام الرموز الخاصة؟"
+  },
+  "length": {
+    "message": "طول"
+  },
+  "submit": {
+    "message": "حفظ"
+  },
+  "saved": {
+    "message": "حفظ"
+  }
+}

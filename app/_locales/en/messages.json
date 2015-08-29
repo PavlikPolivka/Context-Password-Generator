@@ -1,10 +1,29 @@
 {
   "appName": {
-    "message": "Context Password Generator",
-    "description": "The name of the application"
+    "message": "Context Password Generator"
   },
   "appDescription": {
-    "message": "This is password generator acessible from context menu.",
-    "description": "The description of the application"
+    "message": "This is password generator accessible from context menu."
+  },
+  "contextMenu": {
+    "message": "Generate new password"
+  },
+  "useUpperCase": {
+    "message": "Use upper case letters?"
+  },
+  "useNumbers": {
+    "message": "Use numbers [0 - 9]?"
+  },
+  "useSymbols": {
+    "message": "Use special symbols?"
+  },
+  "length": {
+    "message": "Length:"
+  },
+  "submit": {
+    "message": "Save"
+  },
+  "saved": {
+    "message": "Saved..."
   }
 }

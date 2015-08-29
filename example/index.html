@@ -1,0 +1,69 @@
+<html>
+<head>
+  <link href="pure-min.css" rel="stylesheet">
+</head>
+<body>
+  <script type="text/javascript">
+  var LIVERELOAD_HOST = 'localhost:';
+  var LIVERELOAD_PORT = 35729;
+  var connection = new WebSocket('ws://' + LIVERELOAD_HOST + LIVERELOAD_PORT + '/livereload');
+
+  connection.onerror = function (error) {
+    console.log('reload connection got error:', error);
+  };
+
+  connection.onmessage = function (e) {
+    if (e.data) {
+      var data = JSON.parse(e.data);
+      if (data && data.command === 'reload') {
+        location.reload();
+      }
+    }
+  };
+  </script>
+<div class="pure-g">
+  <div class="pure-u-1-5"></div>
+  <div class="pure-u-3-5">
+    <form class="pure-form pure-form-aligned">
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="name">Username</label>
+                <input id="name" type="text" placeholder="Username">
+            </div>
+
+            <div class="pure-control-group">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password">
+            </div>
+
+            <div class="pure-control-group">
+                <label for="password">Password again</label>
+                <input id="password2" type="password" placeholder="Password again">
+            </div>
+
+            <div class="pure-control-group">
+                <label for="email">Email Address</label>
+                <input id="email" type="email" placeholder="Email Address">
+            </div>
+
+            <div class="pure-control-group">
+                <label for="foo">Supercalifragilistic Password</label>
+                <input id="foo" type="password" placeholder="Enter something here...">
+            </div>
+
+            <div class="pure-controls">
+                <label for="cb" class="pure-checkbox">
+                    <input id="cb" type="checkbox"> I've read the terms and conditions
+                </label>
+
+                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+  </div>
+  <div class="pure-u-1-5"></div>
+</div>
+
+
+</body>
+</html>

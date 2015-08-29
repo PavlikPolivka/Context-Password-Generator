@@ -1,0 +1,29 @@
+{
+  "appName": {
+    "message": "Kontext Passwort Generator"
+  },
+  "appDescription": {
+    "message": "Dies ist Passwort-Generator acessible aus dem Kontextmenü."
+  },
+  "contextMenu": {
+    "message": "Neues Passwort generieren"
+  },
+  "useUpperCase": {
+    "message": "Verwenden Sie Großbuchstaben?"
+  },
+  "useNumbers": {
+    "message": "Verwenden Sie Zahlen [0-9]?"
+  },
+  "useSymbols": {
+    "message": "Verwenden secial Symbole?"
+  },
+  "length": {
+    "message": "Länge:"
+  },
+  "submit": {
+    "message": "Sparen"
+  },
+  "saved": {
+    "message": "Gespeichert ..."
+  }
+}

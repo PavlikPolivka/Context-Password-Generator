@@ -1,0 +1,29 @@
+{
+  "appName": {
+    "message": "Kontextový Generátor Hesel"
+  },
+  "appDescription": {
+    "message": "Toho je generátor hesel dostupný z kontextové nabídky."
+  },
+  "contextMenu": {
+    "message": "Vygeneruj nové heslo"
+  },
+  "useUpperCase": {
+    "message": "Používat velká písmena?"
+  },
+  "useNumbers": {
+    "message": "Používat čísla [0 - 9]?"
+  },
+  "useSymbols": {
+    "message": "Používat speciální znaky?"
+  },
+  "length": {
+    "message": "Délka:"
+  },
+  "submit": {
+    "message": "Uložit"
+  },
+  "saved": {
+    "message": "Uloženo..."
+  }
+}
