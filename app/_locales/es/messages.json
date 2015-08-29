@@ -1,0 +1,29 @@
+{
+  "appName": {
+    "message": "Contexto Password Generator"
+  },
+  "appDescription": {
+    "message": "Esto es un generador de contraseñas accesible desde el menú contextual."
+  },
+  "contextMenu": {
+    "message": "Generar nueva contraseña"
+  },
+  "useUpperCase": {
+    "message": "Utilice letras mayúsculas?"
+  },
+  "useNumbers": {
+    "message": "Use los números [0-9]?"
+  },
+  "useSymbols": {
+    "message": "Utilice símbolos especiales?"
+  },
+  "length": {
+    "message": "Largo:"
+  },
+  "submit": {
+    "message": "Guardar"
+  },
+  "saved": {
+    "message": "Salvado..."
+  }
+}

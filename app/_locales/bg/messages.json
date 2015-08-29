@@ -1,0 +1,29 @@
+{
+  "appName": {
+    "message": "Context Password Generator"
+  },
+  "appDescription": {
+    "message": "Това е парола генератор достъпна от контекстното меню."
+  },
+  "contextMenu": {
+    "message": "Генериране на нова парола"
+  },
+  "useUpperCase": {
+    "message": "Използвайте главни букви?"
+  },
+  "useNumbers": {
+    "message": "Използвайте номера [0-9]?"
+  },
+  "useSymbols": {
+    "message": "Използвайте специални символи?"
+  },
+  "length": {
+    "message": "Дължина:"
+  },
+  "submit": {
+    "message": "Save"
+  },
+  "saved": {
+    "message": "Спасен ..."
+  }
+}

@@ -3,7 +3,7 @@
     "message": "Context Password Generator"
   },
   "appDescription": {
-    "message": "This is password generator acessible from context menu."
+    "message": "This is password generator accessible from context menu."
   },
   "contextMenu": {
     "message": "Generate new password"
@@ -15,7 +15,7 @@
     "message": "Use numbers [0 - 9]?"
   },
   "useSymbols": {
-    "message": "Use secial symbols?"
+    "message": "Use special symbols?"
   },
   "length": {
     "message": "Length:"

@@ -1,0 +1,29 @@
+{
+  "appName": {
+    "message": "コンテキストパスワードジェネレータ"
+  },
+  "appDescription": {
+    "message": "これは、コンテキスト・メニューからアクセスできるパスワードジェネレータです。"
+  },
+  "contextMenu": {
+    "message": "新しいパスワードを生成します"
+  },
+  "useUpperCase": {
+    "message": "大文字を使用しますか？"
+  },
+  "useNumbers": {
+    "message": "使用番号[0から9]？"
+  },
+  "useSymbols": {
+    "message": "特殊記号を使用しますか？"
+  },
+  "length": {
+    "message": "長さ："
+  },
+  "submit": {
+    "message": "保存"
+  },
+  "saved": {
+    "message": "保存されました..."
+  }
+}
